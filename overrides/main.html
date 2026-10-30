@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% if page and page.meta and page.meta.description %}{{ page.meta.description | e }}{% else %}{{ config.site_description | e }}{% endif %}">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#f5f2e9">
+    <meta name="site-base-path" content="{{ config.extra.base_path | default('', true) | e }}">
+    <title>{% if page and page.title and page.url %}{{ page.title | striptags | e }} · {% endif %}{{ config.site_name | e }}</title>
+    <link rel="icon" type="image/svg+xml" href="{{ 'assets/images/mark.svg' | url }}">
+    {% for path in config.extra_css %}<link rel="stylesheet" href="{{ path | url }}">{% endfor %}
+  </head>
+  <body class="{% if page and page.meta and page.meta.layout == 'home' %}home{% else %}interior{% endif %}">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="draft-bar"><div class="wrap">A network in the making. <span>This is our working draft.</span> <a href="{{ 'review/' | url }}">Help shape it <span aria-hidden="true">↗</span></a></div></div>
+    <header class="site-header wrap">
+      <a class="identity" href="{{ '.' | url }}" aria-label="Functional Juggling Network home">
+        <img src="{{ 'assets/images/mark.svg' | url }}" width="46" height="46" alt="">
+        <span>functional juggling<span class="identity-sub">network</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        {% for item in nav.items %}{% if item.title != 'Home' %}<a href="{{ item.url | url }}"{% if item.active %} aria-current="page"{% endif %}{% if item.title == 'Connect' %} class="nav-connect"{% endif %}>{{ item.title }}{% if item.title == 'Connect' %} <span aria-hidden="true">↗</span>{% endif %}</a>{% endif %}{% endfor %}
+      </nav>
+      <details class="mobile-menu">
+        <summary>Menu <span aria-hidden="true">+</span></summary>
+        <nav aria-label="Mobile navigation">{% for item in nav.items %}<a href="{% if item.title == 'Home' %}{{ '.' | url }}{% else %}{{ item.url | url }}{% endif %}"{% if item.active %} aria-current="page"{% endif %}>{{ item.title }}</a>{% endfor %}</nav>
+      </details>
+    </header>
+    <main id="main" tabindex="-1" class="{% if not page or not page.meta or page.meta.layout != 'home' %}wrap page-content{% endif %}">
+      {% block content %}{{ page.content }}{% endblock %}
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-top"><a class="footer-wordmark" href="{{ '.' | url }}">Different ways.<br>Shared possibilities.</a><div><p>An emerging European network for<br>inclusive circus & movement.</p><a href="{{ 'connect/' | url }}">Let’s start a conversation <span aria-hidden="true">↗</span></a></div></div>
+      <div class="wrap footer-bottom"><span>An informal network of people and organisations.</span><nav aria-label="Footer"><a href="{{ 'open-practice/' | url }}">Openness & credits</a><a href="{{ 'about-this-draft/' | url }}">About this draft</a><a href="{{ 'review/' | url }}">Team review</a></nav></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 620" fill="none">
+<title>Different paths through a shared space</title>
+<desc>An abstract diagram inspired by a juggleboard: coloured balls take different curved routes between five parallel tracks. A visual metaphor for adapting a shared practice.</desc>
+<g stroke="#e1d8c7" stroke-width="1"><path d="M0 110h640M0 210h640M0 310h640M0 410h640M0 510h640M100 0v620M200 0v620M300 0v620M400 0v620M500 0v620M600 0v620"/></g>
+<circle cx="328" cy="300" r="240" stroke="#c7bfad" stroke-dasharray="3 8"/>
+<g transform="translate(28 54) rotate(-16 290 260)">
+<rect x="80" y="55" width="400" height="440" rx="42" fill="#ded7c8" stroke="#263a32" stroke-width="2"/>
+<rect x="95" y="48" width="370" height="430" rx="32" fill="#eee7d8" stroke="#263a32" stroke-width="2"/>
+<g stroke="#aca795" stroke-width="2"><path d="M135 78v370M207 78v370M280 78v370M353 78v370M425 78v370"/></g>
+<g stroke="#263a32" stroke-width="2.5" stroke-linecap="round"><path d="M135 448V325c0-56 72-56 72-112V120"/><path d="M280 100v150c0 65 73 65 73 130v68"/><path d="M425 448V340c0-85-145-85-145-175" stroke-dasharray="5 7"/></g>
+<g fill="#b43d29" stroke="#263a32" stroke-width="2"><circle cx="135" cy="381" r="25"/><circle cx="207" cy="142" r="25"/></g>
+<circle cx="353" cy="404" r="25" fill="#e2ad45" stroke="#263a32" stroke-width="2"/>
+<circle cx="280" cy="193" r="25" fill="#738878" stroke="#263a32" stroke-width="2"/>
+<circle cx="425" cy="320" r="25" fill="#f5f2e9" stroke="#263a32" stroke-width="2"/>
+<g stroke="#263a32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m129 325 6-9 6 9M201 102l6-9 6 9M347 447l6 9 6-9"/></g>
+</g>
+<g stroke="#b43d29" stroke-width="2"><path d="m513 106 28-29m-8 31 26-8M71 481l-28 12m31 6-12 19"/></g>
+<circle cx="548" cy="456" r="32" fill="#e2ad45"/><path d="m536 456 9 9 15-19" stroke="#263a32" stroke-width="2.5"/>
+</svg>

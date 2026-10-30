@@ -1,0 +1,11 @@
+.venv/
+.cache/
+site/
+artifacts/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+.zensical-build-*.toml
+.playwright-mcp/
+notes/

@@ -1,0 +1,57 @@
+{
+  "$schema": "./network.schema.json",
+  "schema_version": "1.0",
+  "title": "Functional Juggling Network — draft directory",
+  "updated": "2026-10-30",
+  "status": "draft",
+  "license": null,
+  "license_note": "A shared licence for editorial text and directory data requires collective agreement. Public access does not grant a reuse licence.",
+  "relationship_note": "Current working group supplied for this draft. This is not a formal membership register; entries need organisation review.",
+  "organisations": [
+    {
+      "id": "inspiral-hu",
+      "name": "Inspirál Circus Center",
+      "country_code": "HU",
+      "url": "https://inspiralcircus.hu/",
+      "people": ["Veronika Gallyas"],
+      "review_status": "awaiting-organisation-review",
+      "sources": ["https://nica-ev.github.io/circuswiki/en/Inspir%C3%A1l%20Circus%20Center/"]
+    },
+    {
+      "id": "self-it",
+      "name": "SELF A.P.S.",
+      "country_code": "IT",
+      "url": "https://nica-ev.github.io/circuswiki/en/SELF%20APS/",
+      "people": ["Lapo Botteri"],
+      "review_status": "awaiting-organisation-review",
+      "sources": ["https://nica-ev.github.io/circuswiki/en/SELF%20APS/"]
+    },
+    {
+      "id": "nica-de",
+      "name": "NICA e.V.",
+      "country_code": "DE",
+      "url": "https://nica.network/en/",
+      "people": ["Peter Huhndorf", "Marc Bielert"],
+      "review_status": "awaiting-organisation-review",
+      "sources": ["https://nica.network/en/"]
+    },
+    {
+      "id": "monokyklo-gr",
+      "name": "MONOKYKLO",
+      "country_code": "GR",
+      "url": "https://nica-ev.github.io/circuswiki/en/Monokyklo/",
+      "people": ["Marianthi"],
+      "review_status": "awaiting-organisation-review",
+      "sources": ["https://nica-ev.github.io/circuswiki/en/Monokyklo/"]
+    },
+    {
+      "id": "odskocznia-pl",
+      "name": "Odskocznia Studio",
+      "country_code": "PL",
+      "url": "https://odskoczniastudio.pl/",
+      "people": ["Paulina Chodnicka", "Wiktoria Witenberg"],
+      "review_status": "awaiting-organisation-review",
+      "sources": ["https://odskoczniastudio.pl/paulina-chodnicka/", "https://nica-ev.github.io/circuswiki/en/Lets-talk-about-inclusive-circus-practice/"]
+    }
+  ]
+}
